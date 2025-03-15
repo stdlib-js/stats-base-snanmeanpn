@@ -1,9 +1,9 @@
-"use strict";var p=function(e,n){return function(){return n||e((n={exports:{}}).exports,n),n.exports}};var c=p(function(z,m){
-var s=require('@stdlib/number-float64-base-to-float32/dist');function _(e,n,o){var i,a,r,v,u,t,f;if(e<=0)return NaN;if(e===1||o===0)return n[0];for(o<0?i=(1-e)*o:i=0,f=i,r=0,u=0,t=0;t<e;t++)a=n[i],a===a&&(r=s(r+a),u+=1),i+=o;if(u===0)return NaN;for(r=s(r/u),v=0,i=f,t=0;t<e;t++)a=n[i],a===a&&(v=s(v+s(a-r))),i+=o;return s(r+s(v/u))}m.exports=_
-});var j=p(function(A,y){
-var q=require('@stdlib/number-float64-base-to-float32/dist');function E(e,n,o,i){var a,r,v,u,t,f;if(e<=0)return NaN;if(e===1||o===0)return n[i];for(a=i,v=0,t=0,f=0;f<e;f++)r=n[a],r===r&&(v=q(v+r),t+=1),a+=o;if(t===0)return NaN;for(v=q(v/t),a=i,u=0,f=0;f<e;f++)r=n[a],r===r&&(u=q(u+q(r-v))),a+=o;return q(v+q(u/t))}y.exports=E
-});var R=p(function(B,F){
-var N=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),x=c(),O=j();N(x,"ndarray",O);F.exports=x
-});var b=require("path").join,g=require('@stdlib/utils-try-require/dist'),h=require('@stdlib/assert-is-error/dist'),k=R(),l,T=g(b(__dirname,"./native.js"));h(T)?l=k:l=T;module.exports=l;
+"use strict";var f=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var p=f(function(A,c){
+var v=require('@stdlib/number-float64-base-to-float32/dist');function _(e,r,i,q){var t,a,n,o,s,u;if(e<=0)return NaN;if(e===1||i===0)return r[q];for(t=q,n=0,s=0,u=0;u<e;u++)a=r[t],a===a&&(n=v(n+a),s+=1),t+=i;if(s===0)return NaN;for(n=v(n/s),t=q,o=0,u=0;u<e;u++)a=r[t],a===a&&(o=v(o+v(a-n))),t+=i;return v(n+v(o/s))}c.exports=_
+});var l=f(function(B,y){
+var E=require('@stdlib/strided-base-stride2offset/dist'),F=p();function O(e,r,i){return F(e,r,i,E(e,i))}y.exports=O
+});var x=f(function(C,j){
+var T=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),d=l(),b=p();T(d,"ndarray",b);j.exports=d
+});var g=require("path").join,h=require('@stdlib/utils-try-require/dist'),k=require('@stdlib/assert-is-error/dist'),w=x(),m,R=h(g(__dirname,"./native.js"));k(R)?m=w:m=R;module.exports=m;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
