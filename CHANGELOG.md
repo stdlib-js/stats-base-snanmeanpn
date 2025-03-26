@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-15)
+## Unreleased (2025-03-26)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`eca796b`](https://github.com/stdlib-js/stdlib/commit/eca796be22370f8e6ffce1157bd077e14428c236) - **refactor:** update paths _(by Aayush Khanna)_
 -   [`2b334ad`](https://github.com/stdlib-js/stdlib/commit/2b334ad1a9801e0ad49444efb5d692992acb272a) - **feat:** add C ndarray interface and refactor implementation for `stats/base/snanmeanpn` [(#4777)](https://github.com/stdlib-js/stdlib/pull/4777) _(by Prashant Kumar Yadav, Athan Reines)_
 -   [`6e4d0b4`](https://github.com/stdlib-js/stdlib/commit/6e4d0b4ca7e0723d8af03e25cb1b8751a3464b58) - **refactor:** update `stats/base/snanmeanpn` native addon from C++ to C [(#4611)](https://github.com/stdlib-js/stdlib/pull/4611) _(by Vivek Maurya)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
@@ -39,8 +40,9 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
+-   Aayush Khanna
 -   Athan Reines
 -   Philipp Burckhardt
 -   Prashant Kumar Yadav
